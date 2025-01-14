@@ -1,0 +1,69 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+/* App container for the entire page layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Main content holding video player and playlist */
+.main-content {
+  display: flex;
+  flex: 1; /* Takes up available space except the bottom section */
+}
+
+/* Video player section */
+.video-player-section {
+  flex: 3;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Playlist section */
+.playlist-section {
+  flex: 1;
+  padding: 10px;
+  background-color: #ececec;
+  overflow-y: auto;
+  border-left: 1px solid #ddd;
+}
+
+/* Upload section fixed at the bottom */
+.upload-section {
+  background-color: #ffffff;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Upload section content styling */
+.upload-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upload-section-content h2 {
+  margin-bottom: 10px;
+}
+
+.upload-section-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-section-content button:hover {
+  background-color: #0056b3;
+}
